@@ -79,6 +79,10 @@ export class AnimatedOnScroll extends React.Component {
     this.setState({isVisible: isVisibleNext})
   };
 
+  setVisible = isVisibleParams => {
+    this.setState({isVisible: isVisibleParams})
+  }
+
   render() {
     const {children, ...rest} = this.props;
     const {isVisible} = this.state;
